@@ -4,16 +4,11 @@ import { Link } from 'react-router-dom';
 function Header(){
     return (
         <header id="header">
-            <div className="header__port">
-                <Link to="/portfolio">portfolio</Link>
-            </div>
-            <div className="header__logo">
-                <Link to="/">Hwindy</Link>
-            </div>
             <nav className="header__menu">
                 <ul>
+                    <li><Link to="/">Home</Link></li>
                     <li><Link to="/about">About</Link></li>
-                    <li><Link to="/reference">Reference</Link></li>
+                    <li><Link to="/portfolio">projects</Link></li>
                     <li><Link to="/youtube">youtube</Link></li>
                     <li><Link to="/script">Script</Link></li>
                     <li><Link to="/contact">contact</Link></li>

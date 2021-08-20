@@ -3,76 +3,88 @@
   overflow: hidden;
   z-index: 1200;
   position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
+  top:10vh;
+  right:5vw;
+  width: 5vw;
   color: #fff;
-  border-bottom: 1px solid #2e2e30;
   display: flex;
   align-items: center;
   font-family: var(--fontSub);
   text-transform: capitalize;
   font-weight: 500;
-  background: #000;
+  background: #252525;
+  padding: 0 5vw;
 }
 
-.header__port {
-  flex: 1 1 35%;
-  padding-left: 1rem;
-}
+// .header__port {
+//   flex: 1 1 35%;
+//   padding-left: 1rem;
+// }
 
-.header__port a {
-  position: relative;
-  padding-left: 10px;
-}
+// .header__port a {
+//   position: relative;
+//   padding-left: 10px;
+// }
 
-.header__port a::before {
-  content: "";
-  width: 5px;
-  height: 5px;
-  background: #fff;
-  position: absolute;
-  left: 0;
-  top: 3px;
-  border-radius: 50%;
-}
+// .header__port a::before {
+//   content: "";
+//   width: 5px;
+//   height: 5px;
+//   background: #fff;
+//   position: absolute;
+//   left: 0;
+//   top: 3px;
+//   border-radius: 50%;
+// }
 
-.header__port a::after {
-  content: "";
-  width: 5px;
-  height: 5px;
-  background: #fff;
-  position: absolute;
-  left: 0;
-  top: 11px;
-  border-radius: 50%;
-}
+// .header__port a::after {
+//   content: "";
+//   width: 5px;
+//   height: 5px;
+//   background: #fff;
+//   position: absolute;
+//   left: 0;
+//   top: 11px;
+//   border-radius: 50%;
+// }
 
-.header__logo {
-  flex: 1 1 30%;
-  text-align: center;
-  margin: 1.5rem;
-}
+// .header__logo {
+//   flex: 1 1 30%;
+//   margin: 1.5rem;
+  
+// }
 
-.header__logo a {
-  font-family: "Playfair Display";
-  font-size: 1.8rem;
-  line-height: 1;
-}
+// .header__logo a {
+//   font-family: "Playfair Display";
+//   font-size: 11vw;
+//   line-height: 0.95;
+// }
 
 .header__menu {
   flex: 1 1 35%;
   text-align: right;
   padding-right: 1rem;
+  
+  ul {
+    display: flex;
+    flex-direction: column;
+  }
 
   li {
       display: inline;
 
       a {
           display: inline-block;
-          padding: 12px 10px 10px; 
+          padding-bottom: 10px; 
       }
   }
+  li:hover {
+  transition: all 2s ease;
+
+    a {
+      text-decoration: underline;
+    }
+}
 }
 
 //footer
@@ -86,7 +98,7 @@
   border-top: 1px solid #2e2e30;
   font-family: "Rajdhani", "Chosunilbo_myungjo";
   font-weight: 500;
-  background: #000;
+  background: #252525;
   display: flex;
   align-items: center;
   bottom: 0;
