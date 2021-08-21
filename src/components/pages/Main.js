@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Header from '../layout/Header';
 
 // class 컴포넌트
@@ -8,19 +9,28 @@ class Main extends React.Component {
       <div id="wrap">
         <Header />
         <main id="mainCont">
+          <div className="main__logo">
+            <h1>react<br />portfolio</h1>
+            <nav className="header__menu__main">
+                <ul>
+                    <li><Link to="/">Home</Link></li>
+                    <li><Link to="/about">About</Link></li>
+                    <li><Link to="/portfolio">projects</Link></li>
+                    <li><Link to="/youtube">youtube</Link></li>
+                    <li><Link to="/script">Script</Link></li>
+                    <li><Link to="/contact">contact</Link></li>
+                </ul>
+            </nav>
+          </div>
           <div className="main__cont">
-            <div className="main__logo">
-              <h1>react<br />portfolio</h1>
-            </div>
-            <div class="main__text">
-              <div className="main__left">
-                <div>
-                  thank you for visit my website.<br />
-                  i am enthusiastic & steady person.<br />
-                  i hope to work together soon.
-                </div>
-                <div class="main__flower">
-                  <svg version="1.1" id="flower" x="0px" y="0px" viewBox="0 0 512 512">
+            <div className="main__left">
+              <div>
+                thank you for visit my website.<br />
+                i am enthusiastic & steady person.<br />
+                i hope to work together soon.
+              </div>
+              <div class="main__flower">
+                <svg version="1.1" id="flower" x="0px" y="0px" viewBox="0 0 512 512">
                     <animateTransform attributeName="transform" begin="0s" dur="20s" type="rotate" from="0 0 0" to="360 0 0" repeatCount="indefinite" />
                       <circle class="st0" cx="256" cy="256" r="26.5"/>
                       <path class="st0" d="M230.6,89.1c3-37.2,11.8-64,22.1-64c10.2,0,18.9,26.4,22,63.2c0.8,9.3,1.2,19.3,1.2,29.7
@@ -72,12 +82,11 @@ class Main extends React.Component {
                       <path class="st0" d="M259.5,206.8c1.3,2.5,3,4.1,5,4.7c2.3,0.6,4.8-0.2,7.6-2.1c12.2-8.7,28-41.1,38.9-81.6c2.7-10,4.9-19.8,6.5-29
                         c0,0,0,0,0,0c6.5-36.3,5-64.1-4.9-66.7c-9.9-2.7-25.3,21-37.9,56.2"/>
                     </svg>
-                </div>
               </div>
-              <div className="main__letter">
-                <div>Front End</div>
-                <div>Developer</div>
-              </div>
+            </div>
+            <div className="main__letter">
+              <div>Front End</div>
+              <div>Developer</div>
             </div>
           </div>
         </main>

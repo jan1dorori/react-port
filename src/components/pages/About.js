@@ -1,5 +1,5 @@
 import React from 'react';
-import Title from '../basics/Title';
+import { Link } from 'react-router-dom';
 import Header from '../layout/Header';
 import Layout from '../layout/Layout';
 
@@ -45,7 +45,27 @@ function About(){
             <Layout>
                 <section id="aboutCont">
                     <div className="container">
-                        <Title text={["about", "me"]} />
+                        <div className="about-1-container">
+                            <h1>
+                                <span>i am</span>
+                                <span>sensible</span>
+                                <span>and</span>
+                                <span>detailed</span>
+                                <span>front-end</span>
+                                <span>developer</span>
+                            </h1>
+                            <nav className="header__menu__main">
+                                <ul>
+                                    <li><Link to="/">Home</Link></li>
+                                    <li><Link to="/about">About</Link></li>
+                                    <li><Link to="/portfolio">projects</Link></li>
+                                    <li><Link to="/youtube">youtube</Link></li>
+                                    <li><Link to="/script">Script</Link></li>
+                                    <li><Link to="/contact">contact</Link></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        
                         <div className="about-cont">
                             {aboutMe.map((about) => (
                                 <AboutMe
